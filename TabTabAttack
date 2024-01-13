@@ -1,0 +1,31 @@
+btr33z0r5-picoctf@webshell:~$ wget https://mercury.picoctf.net/static/fe16c756149cfa85f23e73cd9dbd6a25/Addadshashanammu.zip
+--2024-01-13 03:44:26--  https://mercury.picoctf.net/static/fe16c756149cfa85f23e73cd9dbd6a25/Addadshashanammu.zip
+Resolving mercury.picoctf.net (mercury.picoctf.net)... 18.189.209.142
+Connecting to mercury.picoctf.net (mercury.picoctf.net)|18.189.209.142|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4520 (4.4K) [application/octet-stream]
+Saving to: 'Addadshashanammu.zip'
+
+Addadshashanammu.zip       100%[=====================================>]   4.41K  --.-KB/s    in 0s      
+
+2024-01-13 03:44:26 (2.00 GB/s) - 'Addadshashanammu.zip' saved [4520/4520]
+
+btr33z0r5-picoctf@webshell:~$ file Addadshashanammu.zip 
+Addadshashanammu.zip: Zip archive data, at least v1.0 to extract, compression method=store
+btr33z0r5-picoctf@webshell:~$ unzip Addadshashanammu.zip 
+Archive:  Addadshashanammu.zip
+   creating: Addadshashanammu/
+   creating: Addadshashanammu/Almurbalarammi/
+   creating: Addadshashanammu/Almurbalarammi/Ashalmimilkala/
+   creating: Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/
+   creating: Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/
+   creating: Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/
+   creating: Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/Ularradallaku/
+  inflating: Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/Ularradallaku/fang-of-haynekhtnamet  
+btr33z0r5-picoctf@webshell:~$ cd Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/Ularradallaku/
+btr33z0r5-picoctf@webshell:~/Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/
+Onnissiralis/Ularradallaku$ ls
+fang-of-haynekhtnamet
+btr33z0r5-picoctf@webshell:~/Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/
+Onnissiralis/Ularradallaku$ ./fang-of-haynekhtnamet 
+*ZAP!* picoCTF{l3v3l_up!_t4k3_4_r35t!_76266e38}
