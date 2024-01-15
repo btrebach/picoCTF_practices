@@ -1,0 +1,12 @@
+btr33z0r5-picoctf@webshell:~$ nc saturn.picoctf.net 52682
+'picoCTF{gl17ch_m3_n07_' + chr(0x62) + chr(0x64) + chr(0x61) + chr(0x36) + chr(0x38) + chr(0x66) + chr(0x37) + chr(0x35) + '}'
+^C
+62:b
+64:d
+61:a
+36:6
+38:8
+66:f
+37:7
+35:5
+picoCTF{gl17ch_m3_n07_bda68f75}
