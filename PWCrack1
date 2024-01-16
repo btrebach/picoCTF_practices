@@ -1,0 +1,33 @@
+btr33z0r5-picoctf@webshell:~$ mkdir PWCrack1
+btr33z0r5-picoctf@webshell:~$ cd PWCrack1/
+btr33z0r5-picoctf@webshell:~/PWCrack1$ wget https://artifacts.picoctf.net/c/10/level1.py
+--2024-01-16 03:00:10--  https://artifacts.picoctf.net/c/10/level1.py
+Resolving artifacts.picoctf.net (artifacts.picoctf.net)... 3.160.22.43, 3.160.22.128, 3.160.22.16, ...
+Connecting to artifacts.picoctf.net (artifacts.picoctf.net)|3.160.22.43|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 876 [application/octet-stream]
+Saving to: 'level1.py'
+
+level1.py                       100%[====================================================>]     876  --.-KB/s    in 0s      
+
+2024-01-16 03:00:10 (525 MB/s) - 'level1.py' saved [876/876]
+
+btr33z0r5-picoctf@webshell:~/PWCrack1$ wget https://artifacts.picoctf.net/c/10/level1.flag.txt.enc
+--2024-01-16 03:00:27--  https://artifacts.picoctf.net/c/10/level1.flag.txt.enc
+Resolving artifacts.picoctf.net (artifacts.picoctf.net)... 3.160.22.16, 3.160.22.43, 3.160.22.128, ...
+Connecting to artifacts.picoctf.net (artifacts.picoctf.net)|3.160.22.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 30 [application/octet-stream]
+Saving to: 'level1.flag.txt.enc'
+
+level1.flag.txt.enc             100%[====================================================>]      30  --.-KB/s    in 0s      
+
+2024-01-16 03:00:27 (15.5 MB/s) - 'level1.flag.txt.enc' saved [30/30]
+
+btr33z0r5-picoctf@webshell:~/PWCrack1$ ls
+level1.flag.txt.enc  level1.py
+btr33z0r5-picoctf@webshell:~/PWCrack1$ nano level1.py 
+btr33z0r5-picoctf@webshell:~/PWCrack1$ python level1.py 
+Please enter correct password for flag: 691d -> found in level1.py
+Welcome back... your flag, user:
+picoCTF{545h_r1ng1ng_56891419}
